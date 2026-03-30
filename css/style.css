@@ -1,0 +1,234 @@
+/* =========================================
+   1. General Styles
+   ========================================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.landing {
+    background-color: rgb(25, 25, 68);
+}
+
+/* =========================================
+   2. Navbar
+   ========================================= */
+nav .navbar-brand {
+    font-size: 30px;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main-nav {
+    transition: all 0.4s ease-in-out; /* سر النعومة في الحركة */
+}
+
+/* حالة الروابط عند التفاعل */
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(206, 44, 44);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: red !important;
+}
+
+/* التنسيق عند عمل Scroll */
+.nav-scroll {
+    background-color: white;
+}
+
+.nav-scroll .nav-link {
+    color: black !important;
+}
+
+.nav-scroll .navbar-brand {
+    color: black;
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f8d7da;
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+/* =========================================
+   3. Hero Section 
+   ========================================= */
+#hero {
+    padding: 75px 0;
+}
+
+#hero h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+#hero button {
+    border-radius: 50px;
+    padding: 7px 25px;
+    box-shadow: 0 5px 15px rgb(36, 35, 35);
+}
+
+#hero button:hover {
+    background-color: rgb(80, 130, 177);
+}
+
+/* =========================================
+   4. About Section 
+   ========================================= */
+#about {
+    margin-top: 60px;
+}
+
+#about h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#about .text1 {
+    padding-left: 60px;
+}
+
+#about .ttext {
+    padding-left: 130px;
+}
+
+#about button {
+    border-radius: 40px;
+    padding: 7px 20px;
+    box-shadow: 0 5px 15px rgb(36, 35, 35);
+}
+
+#about button:hover {
+    background-color: rgb(24, 109, 179);
+}
+
+/* =========================================
+   5. About2 Section 
+   ========================================= */
+#about2 {
+    margin-top: 120px;
+}
+
+#about2 h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#about2 .text {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+/* =========================================
+   6. Services Section
+   ========================================= */
+#services {
+    background-color: rgb(32, 92, 170);
+    margin-top: 140px;
+    padding: 60px 0;
+}
+
+#services .icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(70, 95, 177);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box img {
+    width: 40px;
+}
+
+#services .img1 {
+    border-radius: 80px;
+}
+
+#services a {
+    border-radius: 50px;
+    padding: 7px 25px;
+    box-shadow: 0 5px 15px rgb(49, 48, 48);
+}
+
+#services a:hover {
+    background-color: rgb(32, 92, 170);
+}
+
+/* =========================================
+   7. FAQ Section 
+   ========================================= */
+#frequently {
+    margin: 100px 0;
+}
+
+#frequently h1 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+#frequently h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#frequently .btn-contact {
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgb(36, 35, 35);
+}
+
+/* =========================================
+   8. Contact Section
+   ========================================= */
+#contact .col2 {
+    padding: 50px 30px;
+    background-color: rgb(32, 92, 170);
+}
+
+#contact .col2 button {
+    box-shadow: 0 5px 15px rgb(36, 35, 35);
+    border-radius: 50px;
+}
+
+#contact .col2 button:hover {
+    background-color: rgb(32, 98, 184);
+}
+
+/* =========================================
+   9. Responsive Design (التجاوب مع الشاشات)
+   ========================================= */
+@media (max-width: 991px) {
+    /* تنسيق قائمة الموبايل */
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+    }
+
+    /* تنسيق قسم About2 للموبايل */
+    #about2 .row {
+        display: block;
+    }
+    #about2 .col-lg-6 {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
